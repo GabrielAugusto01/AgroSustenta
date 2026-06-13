@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroFuturo - Sustentabilidade Industrial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-flex">
+            <div class="logo">Agro<span>Futuro</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#producao">Produção Limpa</a></li>
+                    <li><a href="#materiais">Materiais</a></li>
+                    <li><a href="#calculadora">Interativo</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Agroindústria Eficiente e Verde</h1>
+            <p>Descubra como aumentar a produtividade do campo sem agredir o meio ambiente através de tecnologia e materiais ecológicos.</p>
+            <a href="#producao" class="btn-main">Explorar Soluções</a>
+        </div>
+    </section>
+
+    <section id="producao" class="section-padding">
+        <div class="container">
+            <h2>Como Melhorar a Produção com Sustentabilidade</h2>
+            <p class="section-subtitle">O equilíbrio perfeito entre alta produtividade e preservação ambiental.</p>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=600&auto=format&fit=crop" alt="Painéis Solares sobrepostos captando energia limpa">
+                    <h3>Energia Renovável</h3>
+                    <p>Uso de painéis solares e biomassa gerada pelos próprios resíduos da plantação para abastecer as máquinas industriais.</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/212324/pexels-photo-212324.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Irrigação Inteligente">
+                    <h3>Manejo Inteligente da Água</h3>
+                    <p>Sistemas de irrigação por gotejamento automatizados com sensores de umidade, evitando o desperdício dos recursos hídricos.</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/2255459/pexels-photo-2255459.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Plantação Saudável">
+                    <h3>Defensivos Biológicos</h3>
+                    <p>Substituição de pesticidas químicos agressivos por soluções biológicas que protegem a lavoura sem contaminar o solo e os lençóis freáticos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="materiais" class="section-padding bg-light">
+        <div class="container">
+            <h2>Materiais Recomendados para a Agroindústria</h2>
+            <p class="section-subtitle">Substitutos ecológicos para as estruturas e embalagens industriais.</p>
+            
+            <div class="materiais-flex">
+                <div class="material-item">
+                    <div class="material-text">
+                        <h3>1. Bioplásticos e Embalagens Biodegradáveis</h3>
+                        <p>Utilizar embalagens feitas a partir do amido de milho ou cana-de-açúcar para o ensacamento e transporte de grãos, reduzindo o uso de plásticos comuns que demoram séculos para se decompor.</p>
+                    </div>
+                </div>
+                <div class="material-item">
+                    <div class="material-text">
+                        <h3>2. Estruturas de Bambu Tratado</h3>
+                        <p>Para galpões de armazenamento leve e estufas, o bambu serve como um excelente substituto para estruturas metálicas ou madeiras nativas. É resistente, cresce rápido e sequestra muito carbono da atmosfera.</p>
+                    </div>
+                </div>
+                <div class="material-item">
+                    <div class="material-text">
+                        <h3>3. Concreto Verde (Geopolímero)</h3>
+                        <p>Nas calçadas, pisos industriais e canais de escoamento, o uso de concreto que reaproveita cinzas de biomassa reduz drasticamente a pegada de carbono da construção da fábrica.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculadora" class="section-padding">
+        <div class="container text-center">
+            <h2>Área Interativa: Teste seu Impacto</h2>
+            <p class="section-subtitle">Selecione uma prática e veja o retorno estimado para a sua agroindústria.</p>
+            
+            <div class="interactive-box">
+                <label for="pratica-select">Escolha uma ação sustentável:</label>
+                <select id="pratica-select">
+                    <option value="0">-- Selecione uma opção --</option>
+                    <option value="energia">Instalar Painéis Solares na Indústria</option>
+                    <option value="agua">Implementar Irrigação Automatizada</option>
+                    <option value="bio">Trocar Defensivos Químicos por Biológicos</option>
+                </select>
+                
+                <button id="btn-calcular">Analisar Resultado</button>
+                
+                <div id="resultado-interativo" class="resultado-escondido">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section-padding bg-dark">
+        <div class="container">
+            <h2 class="text-white">Fale com Nossos Especialistas</h2>
+            <div class="contato-grid">
+                
+                <div class="contato-info">
+                    <h3>Canais de Atendimento</h3>
+                    <p><strong>Telefone:</strong> (11) 98765-4321</p>
+                    <p><strong>E-mail:</strong> contato@agrofuturoficticio.com.br</p>
+                    <p><strong>Endereço:</strong> Rodovia do Café, Km 42 - Distrito Industrial</p>
+                </div>
+                
+                <form id="form-contato" class="form-estilizado">
+                    <input type="text" id="nome" placeholder="Seu Nome" required>
+                    <input type="email" id="email" placeholder="Seu E-mail" required>
+                    <textarea id="mensagem" placeholder="Sua mensagem ou dúvida sobre agro sustentável..." rows="4" required></textarea>
+                    <button type="submit">Enviar Mensagem</button>
+                    <p id="msg-sucesso" class="sucesso-txt"></p>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AgroFuturo Industrial. Desenvolvido com foco no planeta.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
